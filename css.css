@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+}
+
+/* nav bar */
+    .nav{
+        background-color: rgb(255, 153, 57);
+
+        font-size:30px ;
+        text-transform: capitalize;
+        height: 68px;
+
+    }
+    .nav__ul{
+        width: 100%;
+        box-sizing: border-box;
+        top: 09px;
+        position: relative;
+    }
+
+    .nav__responsive-ul{
+        display: none;
+    }
+
+    .nav__ul li{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        margin: 6px 6px 6px 2px;
+        box-sizing: border-box;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+    .nav__ul a{
+        text-decoration: none;
+        color: white;
+        margin: 6px;
+        font-family: cursive;
+        cursor: pointer;
+    }
+
+    /* Hovers li */
+
+    .nav__ul li:hover{
+        color: #ffffff9c;
+    }
+    .nav__ul a:hover{
+        color: #ffffff9c;
+    }
+    .nav__ul i:hover{
+        color: #ffffff9c;
+    }
+    .nav__button:hover{
+        color: #ffffff9c;
+    }
+
+
+    /* responsive hovers*/
+
+    .nav__responsive-ul li:hover{
+        color: #ffffff9c;
+    }
+    .nav__responsive-ul a:hover{
+        color: #ffffff9c;
+    }
+    .nav__responsive-ul i:hover{
+        color: #ffffff9c;
+    }
+    .nav__responsive-button:hover{
+        color: #ffffff9c;
+    }
+
+
+
+    /* Button */
+
+    .nav__button{
+        color: white;
+        padding-right:8px ;
+        cursor: pointer;
+        float: right;
+        margin: 11px;
+        font-size: 38px;
+    }
+
+
+
+    .nav__responsive-button-container{
+        position: absolute;
+        width: 100%;
+        font-size:35px ;
+        background-color: rgb(255, 153, 57);
+        margin-top:-34px ;
+        z-index: 1000;
+        
+
+    }
+    .nav__responsive-button{
+        padding: 23px 30px 17px 64px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+
+
+    li{
+        position: relative;
+        transition: 0.4s;
+
+    }
+    .nav__responsive-li:active{
+        background-color: rgb(255, 153, 57);
+
+        padding: 25px;
+    }
+
+
+    input{
+        border: transparent ;
+
+    }
+
+    .search_bar{
+        float: right;
+        margin: 11px;
+        padding: 8px;
+        border-radius: 15px;
+        border: transparent ;
+        text-decoration: none;
+        font-family: cursive;
+        color: rgb(121, 121, 121);
+        font-weight: bold;
+        font-size: 15px;
+
+    }
+
+    #icon__search{
+        color: white;
+        margin-right: 2px;
+        position: absolute;
+        right: 255px;
+        border: transparent ;
+        top: 16px;
+        cursor: pointer;
+
+        
+
+    }
+    #icon__search:hover{
+        border: transparent ;
+        color: #ffffff9c;
+
+    }
+
+
+    /*----------------phone view-------------------- */
+
+
+    @media only screen and (max-width:981px )
+    {
+
+        
+        .nav__li-container:hover{
+            color: #ffffff9c;
+        }
+
+        .nav__ul{
+            display: none;
+            left: 4px;
+        }
+
+
+        .nav{
+            height: 37px;
+            width: 100%;
+            background: rgb(245, 212, 170);
+
+
+        }
+
+        body{
+            background-image: none;
+        }
+        
+
+        .nav__responsive-ul{
+            display: block;
+            position: absolute;
+            width: 120%;
+            margin: 0px 0 0 -39px;
+            text-transform: capitalize;
+            padding-top: 27px;
+            height: 0px;
+            color: black;
+        }
+
+        
+        .nav__li-container{
+            position: relative;
+            top: -1000px;
+            height: calc(100vh -64px);
+            background: rgb(245, 212, 170);
+                    transition: 0.9s ;
+            z-index: 1;
+
+        } 
+
+
+        .nav__responsive-ul:hover > .nav__li-container{
+            top: -21px;
+
+        }
+
+
+
+        .nav__responsive-li {
+            width: 100%;
+            list-style:none;
+            margin: 60px 0 0 0;
+            padding: 28px 63px
+
+
+        }
+
+        
+        .nav__responsive-li i {
+            box-sizing: border-box;
+            text-align: right;
+            margin-right:15px ;
+            width: 30px;
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+
+
+        }
+        .nav__responsive-li a {
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            font-weight: bold ;
+            font-family: cursive;
+
+        }
+
+        .nav__li-a{
+            text-decoration: none;
+        }
+
+        img{
+            display: none;
+        }
+
+    }
+
+/* nav bar */
+
+
+
+/* form */
+
+    .form-container{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: solid;
+        height: 700px;
+        width: 800px;
+        position: relative;
+        margin: 2cm auto;
+        padding: 8px;
+        background-color: rgb(255, 153, 57);
+        border-radius: 50%;
+        font-family: cursive;
+        font-size: 20px;
+    }
+
+    .form {
+        flex-direction: column;
+        width: 100%;
+        margin: 7px auto;
+    }
+
+    #form__textarea{
+        margin-top: 5px;
+        width:80%;
+
+    }
+
+    .form__label{
+        font-size: 32px;
+        margin-bottom: 1px;
+        font-family: 'Font Awesome 5 Brands';
+        font-weight: bold;
+        width:100%;
+    }
+    .form__input{
+        padding: 2px;
+        border: transparent;
+        border-bottom: black 5px ;
+
+    }
+
+    input[type="submit"] {
+        margin: 5px;
+        border: transparent;
+        
+    }
+
+/* form */
+
+
+/* img logo */
+    .background__fit img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex: 1;
+    }
+/* img logo */
+
+/* consulta */
+.consulta h1{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 85px;
+    text-align: center;
+    background-color: rgb(255, 153, 57);
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    border: transparent;
+    border-radius: 25px;
+    transition: 1.5s;
+}
+
+
+.nosotros h1:hover{
+    background-color: black;
+    color: rgb(255, 153, 57);
+}
+
+
